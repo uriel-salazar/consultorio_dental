@@ -3,3 +3,9 @@
     font-family:Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+
+.navbar{
+    display: flex;
+    position:absolute;
+    right: 0;
+}
