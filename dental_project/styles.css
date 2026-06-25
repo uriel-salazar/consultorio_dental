@@ -37,13 +37,6 @@ a{
     font-size: 2rem;
 }
 
-<<<<<<< HEAD
-.nav-link{
-    transition: 0.7s ease;
-}
-.nav-link:hover{
-    color:blue
-=======
 
 .nav-link{
     color:#F8FAFC;
@@ -51,7 +44,6 @@ a{
 }
 .nav-link:hover{
     color:#0F766E;
->>>>>>> dev
 }
 
 .hamburguer{
@@ -65,12 +57,22 @@ a{
     height: 3px;
     margin:5px auto;
     transition:all 0.3s ease-in-out;
-<<<<<<< HEAD
-    background-color: white;
-=======
     background-color: #F8FAFC;
->>>>>>> dev
 }
+
+.hero-section {
+    width: 100%;
+}
+
+.hero-image img{
+    width: 400px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
 
 @media(max-width:768px) {
     .hamburguer{
@@ -83,15 +85,7 @@ a{
         transform: translateY(8px) rotate(45deg);
     }
      .hamburguer.active .bar:nth-child(3){
-<<<<<<< HEAD
-<<<<<<< HEAD
-        transform: translate-8px) rotate(-45deg);
-=======
         transform: translate-8px rotate(-45deg);
->>>>>>> dev
-=======
-        transform: translate-8px rotate(-45deg);
->>>>>>> dev
     }
     .navbar-menu{
         position:fixed;
@@ -99,11 +93,7 @@ a{
         top:70px;
         gap:0;
         flex-direction: column;
-<<<<<<< HEAD
-        background-color: #262626;
-=======
         background-color: #c7c7c7;
->>>>>>> dev
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -116,4 +106,6 @@ a{
         left: 0;
     }
 }
+
+
 
