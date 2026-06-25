@@ -1,11 +1,12 @@
-*{
+*{  
+    font-family:"Inter", sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 header{
-    background-color: rgb(103, 177, 190);
+    background-color: #14b8a5d2;
 }
 
 li{
@@ -13,7 +14,7 @@ li{
 }
 
 a{
-    color: white;
+    color:#F8FAFC;
     text-decoration: none;
 }
 
@@ -36,11 +37,21 @@ a{
     font-size: 2rem;
 }
 
+<<<<<<< HEAD
 .nav-link{
     transition: 0.7s ease;
 }
 .nav-link:hover{
     color:blue
+=======
+
+.nav-link{
+    color:#F8FAFC;
+    transition: 0.7s ease;
+}
+.nav-link:hover{
+    color:#0F766E;
+>>>>>>> dev
 }
 
 .hamburguer{
@@ -54,7 +65,11 @@ a{
     height: 3px;
     margin:5px auto;
     transition:all 0.3s ease-in-out;
+<<<<<<< HEAD
     background-color: white;
+=======
+    background-color: #F8FAFC;
+>>>>>>> dev
 }
 
 @media(max-width:768px) {
@@ -69,7 +84,11 @@ a{
     }
      .hamburguer.active .bar:nth-child(3){
 <<<<<<< HEAD
+<<<<<<< HEAD
         transform: translate-8px) rotate(-45deg);
+=======
+        transform: translate-8px rotate(-45deg);
+>>>>>>> dev
 =======
         transform: translate-8px rotate(-45deg);
 >>>>>>> dev
@@ -80,7 +99,11 @@ a{
         top:70px;
         gap:0;
         flex-direction: column;
+<<<<<<< HEAD
         background-color: #262626;
+=======
+        background-color: #c7c7c7;
+>>>>>>> dev
         width: 100%;
         text-align: center;
         transition: 0.3s;
