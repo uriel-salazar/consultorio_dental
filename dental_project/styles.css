@@ -6,7 +6,7 @@
 }
 
 header{
-    background-color: #14b8a5d2;
+    background-color: #67afa8d2;
 }
 
 li{
@@ -61,9 +61,24 @@ a{
 }
 
 .hero-section {
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 60px;
+    gap: 40px;
+
 }
 
+
+.hero-text h1{
+    margin-bottom: 10px;
+    
+}
+
+.hero-text p{
+    margin: 0;
+    max-width: 500px;
+}
 .hero-image img{
     width: 400px;
     height: auto;
@@ -93,7 +108,7 @@ a{
         top:70px;
         gap:0;
         flex-direction: column;
-        background-color: #c7c7c7;
+        background-color: #ddc4c4;
         width: 100%;
         text-align: center;
         transition: 0.3s;
