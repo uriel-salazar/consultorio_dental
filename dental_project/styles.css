@@ -66,25 +66,55 @@ a{
     align-items: center;
     padding: 60px;
     gap: 40px;
-
 }
 
-
-.hero-text h1{
+.hero-text h1 {
     margin-bottom: 10px;
-    
 }
 
-.hero-text p{
+.hero-text p {
     margin: 0;
     max-width: 500px;
 }
-.hero-image img{
+
+.hero-image img {
     width: 400px;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: 0;
+    border-radius: 15px;
+}
+
+@media (max-width: 1024px) {
+    .hero-section {
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .hero-image img {
+        width: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+        padding: 40px 24px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .hero-text p {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
 }
 
 
@@ -100,7 +130,7 @@ a{
         transform: translateY(8px) rotate(45deg);
     }
      .hamburguer.active .bar:nth-child(3){
-        transform: translate-8px rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
     }
     .navbar-menu{
         position:fixed;
@@ -121,6 +151,4 @@ a{
         left: 0;
     }
 }
-
-
 
