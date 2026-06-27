@@ -13,10 +13,17 @@ li{
     list-style: none;
 }
 
-a{
+.nav-icon{  
     color:#F8FAFC;
     text-decoration: none;
 }
+
+.nav-link{
+    font-weight: bold;
+    text-decoration: none;
+    color:#F8FAFC;
+}
+
 
 .navbar{
     min-height: 70px ;
@@ -86,6 +93,8 @@ a{
     border-radius: 15px;
 }
 
+
+
 @media (max-width: 1024px) {
     .hero-section {
         padding: 40px;
@@ -106,6 +115,7 @@ a{
     }
 
     .hero-text p {
+        color:#375754;
         max-width: 100%;
         margin: 0 auto;
     }
@@ -138,7 +148,7 @@ a{
         top:70px;
         gap:0;
         flex-direction: column;
-        background-color: #ddc4c4;
+        background-color: #60b3aa94;
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -151,4 +161,5 @@ a{
         left: 0;
     }
 }
+
 
