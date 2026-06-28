@@ -215,8 +215,8 @@ li{
     object-fit: cover;
     object-position: center;
     aspect-ratio: 2 / 3;
-    transition: aspect-ratio 0.5s ease,
-        object-position 0.5s ease;
+    transition: aspect-ratio 0.6s ease,
+    object-position 0.6s ease;
 }
 
 .card-member section {
@@ -228,8 +228,7 @@ li{
     font-size: 1.5rem;
     color: white;
     opacity: 0;
-    transform: translateY(-40px);
-    transition: all 0.35s ease;
+    transition: opacity 0.45s ease 0.10s,transform 0.45s ease 0.10s;
 }
 
 .card-member p {
@@ -238,7 +237,7 @@ li{
     line-height: 1.4;
     opacity: 0;
     transform: translateY(30px);
-    transition: all 0.35s ease 0.15s;
+    transition: opacity 0.45s ease 0.20s;
 }
 
 .card-member:hover::before {
