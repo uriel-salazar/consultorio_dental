@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 header{
     background-color: #67afa8d2;
 }
@@ -67,6 +70,7 @@ li{
     transition:all 0.3s ease-in-out;
     background-color: #F8FAFC;
 }
+
 /* Hero Image section  */
 .hero-section {
     display: grid;
@@ -120,6 +124,142 @@ li{
     background-color: #f6f6f6;
 }
 /* "Our team " section */
+
+.team-div{
+    margin-top: 30px;
+}
+.team-div-container{
+    text-align: center;
+}
+.team-div-container h2{
+    margin-bottom: 18px;
+    font-size:1.8rem;
+}
+
+.team-div-container p{
+    margin-bottom: 30px;
+}
+
+
+.card-member {
+    --bg: #fff;
+    --title-color: #fff;
+    --title-color-hover: #000;
+    --text-color: #666;
+    --button-color: #eee;
+    --button-color-hover: #ddd;
+
+    background: var(--bg);
+    border-radius: 2rem;
+    padding: 0.5rem;
+    width: 20rem;
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+    font-family: Lato, Montserrat, Helvetica, Arial, sans-serif;
+}
+
+.card-member::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 1rem);
+    height: 30%;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    mask: linear-gradient(#0000, #000f 80%);
+    backdrop-filter: blur(1rem);
+    border-radius: 0 0 1.5rem 1.5rem;
+    transition: transform 0.25s;
+}
+
+.member-team {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 2 / 3;
+    border-radius: 1.5rem;
+    transition: aspect-ratio 0.25s, object-position 0.5s;
+}
+
+.card-member {
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    width: 20rem;
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+    font-family: Lato, Montserrat, Helvetica, Arial, sans-serif;
+}
+
+.card-member::before {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0.5rem;
+    width: calc(100% - 1rem);
+    height: 30%;
+    backdrop-filter: blur(12px);
+    mask: linear-gradient(transparent, black 80%);
+    border-radius: 0 0 1.5rem 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.member-team {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1.5rem;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 2 / 3;
+    transition: aspect-ratio 0.5s ease,
+        object-position 0.5s ease;
+}
+
+.card-member section {
+    margin: 1rem;
+}
+
+.card-member h2 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: all 0.35s ease;
+}
+
+.card-member p {
+    margin: 0;
+    color: #666;
+    line-height: 1.4;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.35s ease 0.15s;
+}
+
+.card-member:hover::before {
+    transform: translateY(100%);
+}
+
+.card-member:hover .member-team {
+    aspect-ratio: 1 / 1;
+    object-position: center top;
+}
+
+.card-member:hover h2 {
+    color: black;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-member:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 /* Media queries */
