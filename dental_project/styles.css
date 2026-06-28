@@ -13,6 +13,7 @@ li{
     list-style: none;
 }
 
+/* NAVBAR*/
 .nav-icon{  
     color:#F8FAFC;
     text-decoration: none;
@@ -66,7 +67,7 @@ li{
     transition:all 0.3s ease-in-out;
     background-color: #F8FAFC;
 }
-
+/* Hero Image section  */
 .hero-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -92,7 +93,7 @@ li{
     margin-right: 0;
     border-radius: 15px;
 }
-
+/* About us section */
 .about-us-container {
     text-align: center;
 }
@@ -110,14 +111,18 @@ li{
 }
 
 .item{
+    margin-left: 30px;
+    margin-right: 30px;
+
     padding: 15px;
     border:2px rgba(234, 227, 227, 0.897) solid;
     border-radius: 10px;
     background-color: #f6f6f6;
 }
+/* "Our team " section */
 
 
-
+/* Media queries */
 @media (max-width: 1024px) {
     .hero-section {
         padding: 40px;
