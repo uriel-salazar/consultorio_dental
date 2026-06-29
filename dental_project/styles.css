@@ -130,6 +130,7 @@ li{
 }
 .team-div-container{
     text-align: center;
+   
 }
 .team-div-container h2{
     margin-bottom: 18px;
@@ -138,6 +139,13 @@ li{
 
 .team-div-container p{
     margin-bottom: 30px;
+}
+
+.cards-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
 }
 
 
@@ -151,8 +159,9 @@ li{
 
     background: var(--bg);
     border-radius: 2rem;
-    padding: 0.5rem;
+    padding: 0.5;
     width: 20rem;
+    cursor: pointer;
     height: 30rem;
     overflow: hidden;
     position: relative;
