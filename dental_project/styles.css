@@ -9,12 +9,14 @@
 
 
 header{
-    background-color: #67afa8d2;
+    background-color: #008CBE;
 }
 
 li{
     list-style: none;
 }
+
+
 
 /* NAVBAR*/
 .nav-icon{  
@@ -48,13 +50,18 @@ li{
     font-size: 2rem;
 }
 
+.nav-icon img{
+    width: 80px;
+    height: auto;
+}
+
 
 .nav-link{
     color:#F8FAFC;
     transition: 0.7s ease;
 }
 .nav-link:hover{
-    color:#0F766E;
+    color:#2f5174;
 }
 
 .hamburguer{
@@ -81,10 +88,13 @@ li{
 }
 
 .hero-text h1 {
+    color:#008CBE;
+    font-size:3rem;
     margin-bottom: 10px;
 }
 
 .hero-text p {
+    color:#4A5568;
     margin: 0;
     max-width: 500px;
 }
@@ -102,7 +112,7 @@ li{
     text-align: center;
 }
 .about-us-container h2{
-    color: #1a1b1b;
+    color: #008CBE;
     font-size: 2.8rem;
     margin-top: 20px;
 }
@@ -133,8 +143,9 @@ li{
    
 }
 .team-div-container h2{
-    margin-bottom: 18px;
-    font-size:1.8rem;
+    color: #008CBE;
+    font-size: 2.8rem;
+    margin-top: 20px;
 }
 
 .team-div-container p{
@@ -306,6 +317,15 @@ li{
     
 }
 
+    .cards-row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-member{
+        width: 18rem;
+        height: auto;
+    }
 }
 
 @media (max-width:768px) {
